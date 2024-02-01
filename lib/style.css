@@ -1,0 +1,187 @@
+body {
+    font-family: "Dosis", sans-serif;
+    background-color: #eea8cc;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #eea8cc;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(254, 0, 132);
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #FE0084;
+    border-radius: 10px;
+}  
+
+.container {
+    max-width: 1366px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    box-shadow: 0px 5px 5px rgba(254, 0, 132, 0.5);
+    background-color: #eea8cc;
+}
+
+header h5 {
+    position: absolute;
+    bottom: 3%;
+    left: 19%;
+    color: #FE0084;
+    font-weight: bolder;
+}
+
+#logo {
+    width: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 8%;
+    z-index: 1;
+}
+
+.nav {
+    height: 60px;
+    padding: 10px 10px 10px;
+    background-color: #eea8cc;
+}
+
+.produtos .nav-link.active,
+#contato button {
+    background-color: #FE0084;
+    color: #fff;
+}
+
+.produtos .nav-link:hover,
+.nav-link a {
+    color: #FE0084;
+}
+
+.produtos .nav-link.active:hover{
+    color: #fff;
+}
+
+.titulo-h2 {
+    color: #FE0084;
+    font-weight: bold;
+}
+
+#sobre {
+    text-align: justify;
+}
+
+#sobre p {
+    text-indent: 24px ;
+}
+
+.tab-pane img {
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.tab-pane img:hover {
+    border: 4px solid #FE0084;
+    cursor: pointer;
+}
+
+#contato {
+    position: relative;
+}
+
+.form-control {
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.error {
+    color: red;
+    font-weight: bolder;
+    font-size: 16px;
+    font-style: italic;
+}
+
+
+#contato::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/marca-dagua.png');
+    opacity: .1;
+    z-index: -1; 
+    pointer-events: none; 
+}
+
+#contato img {
+    opacity: .4;
+}
+
+#contato img:hover {
+    border: none;
+    cursor: default;
+}
+
+.form-label:focus,
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border: 2px solid #FE0084;
+}
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+footer,
+footer p {
+    color: #fff;
+    background-color: #FE0084;
+}
+
+@media (max-width: 375px) {
+    .nav i {
+        display: none;
+    }
+}
+
+@media (max-width: 1040px) {
+    #logo {
+        width: 10%;
+        position: absolute;
+        bottom: 70%;
+        left: 8%;
+        z-index: 1;
+    }
+
+    header h5 {
+        position: absolute;
+        bottom: 50%;
+        left: 20%;
+        color: #FE0084;
+        font-weight: bolder;
+    }
+
+    .nav {
+        height: 80px;
+        width: 100vw;
+        height: auto;
+    }
+
+    .nav button {
+        font-size: 12px;
+        padding: 0 4px;
+        margin: 24px auto 0;
+
+    }
+}
